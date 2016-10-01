@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Bootstrap
+  </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <meta charset="utf-8">
+     <style type="text/css">
+       .customDiv{
+        margin-left: 1000px;
+       }
+       .customDiv1{
+        margin-left: 100px;
+       }
+     </style>
+</head>
+<body>
+<img src="toeic.png" width="100%" height=150px>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="nav nav-tabs" class="breadcrumb">
+          <li>
+            <a href="#homeTab" data-toggle="tab">Home</a>
+          </li>
+          <li>
+            <a href="#news" data-toggle="tab">News</a>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            Document<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" data-toggle="tab">Toeic 250-500</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Toeic 500-750</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Toeic 750-990</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            Test<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+                <a href="#" data-toggle="tab">Toeic Listening Test</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Toeic Reading Test</a>
+              </li>
+               <li>
+                <a href="#" data-toggle="tab">Toeic Vocabulary</a>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            Manage<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+             
+              <li class="dropdown">
+            <a href="#" data-toggle="dropdown" class="dropdown-toggle">
+            Upload Document<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li>
+              
+                <a href="#" data-toggle="tab">Listening</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Reading</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Toeic Test</a>
+              </li>
+             
+              </ul>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Shared Document</a>
+              </li>
+              <li>
+                <a href="#" data-toggle="tab">Plan Study</a>
+              </li>
+              <li>
+            <a href="#" data-toggle="tab">Study Proccess</a>
+          </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#discuss" data-toggle="tab">Discuss</a>
+          </li>
+          <li>
+          <div class="btn-toolbar">
+          <div class="btn-group" style="margin-left: 450px">
+            <button class="btn btn-primary btn-sm pull-right" type="button" id="btnShowModal">Login</button>
+            <div class="modal fade" data-ketboard="false" data-backdrop="static" id="loginModal" tabindex="1">
+              <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button class="close" data-dismiss ="modal">&times;</button>
+                    <h4 class="modal-title">Login</h4>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                      <div class="form-group">
+                        <div class="col-md-3">
+                          <div class="radio">
+                            <label><input type="radio" name="optradio">Admin</label>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                    <div class="col-md-3 col-md-offset-6">
+                      <div class="radio">
+                        <label><input type="radio" name="optradio">User</label>
+                      </div>
+                </div>
+                </div>
+                  <div class="form-group">
+                    <label for = "inputUsername">Username</label>
+                    <input type="text" id="inputUsername" placeholder=" Username" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPass">Password</label>
+                    <input type="Password" id="inputPass" placeholder="Login Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <div class="col-md-10">
+                      <div class="checkbox">
+                        <label><input type="checkbox">Remember me</label>
+                      </div>
+                      </div>
+                    </div>
+                </form>
+              </div>
+              <br><br>
+              <div class="modal-footer">
+              <div style="margin-left: 70px">
+                <button class="btn btn-primary" type="submit">Login</button>
+                <button class="btn btn-primary" type="button" id="btnHideModal">Close</button>  
+              </div>
+              </div>
+              <div class="customDiv1"><a href="ForgotPassword.html">Forgot Password?</a></div>
+
+            </div>
+          </div>
+         </div>
+
+         <button class="btn btn-primary btn-sm pull-right" type="button" id="btnRegisterModal">Register</button>
+        <div class="modal fade" data-ketboard="false" data-backdrop="static" id="RegisterModal" tabindex="1">
+          <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button class="close" data-dismiss ="modal">&times;</button>
+                <h4 class="modal-title">Register</h4>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="form-group">
+                    <label for = "inputUsername">Username</label>
+                    <input type="text" id="inputUsername" placeholder=" Username" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPass">Password</label>
+                    <input type="Password" id="inputPass" placeholder=" Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="inputPass">Confirm Password</label>
+                    <input type="Password" id="inputPass" placeholder="Confirm Password" class="form-control">
+                  </div>
+                  <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button class="btn btn-primary" type="submit">Register</button>
+                <button class="btn btn-primary" type="button" id="btnHideModal1">Close</button>
+              </div>
+            </div>
+          </div>
+         </div>
+         </div>
+         </div>
+         </div>
+         </li>
+         </ul>
+      </div>
+    </div>
+  </div>
+   <div class="tab-content">
+    <div id="homeTab" class="tab-pane">
+    <div class="container">
+      <p>Xin chào tất cả các bạn!
+      Do đất nước ta đang trên đà hội nhập với các nước phát triển trên thế giới nên tiếng Anh cũng trở thành yêu cầu quan trọng để chúng ta giao lưu, học hỏi cùng các bạn trên khắp năm châu. Để mọi người có môi trường rèn luyện, trao đổi kiến thức tiếng Anh, trang web học tập về các kỹ năng trong kỳ thi Toeic của chúng tôi đã ra mắt đây!! Nào chúng ta hãy cùng nhau học tập tốt nhé!</p>
+      <img src="toeic1.jpg" align="pull-right">
+      </div>
+    </div>
+    <div class="tab-pane" id="">
+      <p></p>
+    </div>
+    <div class="tab-pane" id="news">
+      <div class="col-md-6 col-md-offset-3 ">
+            <br><br><br><br><br><br>
+            <p style="font-size:18px">USA Today: <a href="http://www.usatoday.com/">http://www.usatoday.com/</a></p>
+            <p style="font-size:18px">The Daily Mail: <a href="http://www.dailymail.co.uk/">http://www.dailymail.co.uk/</a></p>
+             <p style="font-size:18px">New York Times: <a href="http://www.nytimes.com/">http://www.nytimes.com/</a></p>
+             <p style="font-size:18px">Daily Express: <a href="http://www.express.co.uk/">http://www.express.co.uk/</a></p>
+              </div>
+    </div>
+    <div class="tab-pane" id="discuss">
+      <div class="container">
+          <br><br><br><br>
+            <h2>Discuss</h2>  
+            <form>
+              <div class="form-group">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+            </form>
+            <div class="container">     
+              <button type="button" class="btn btn-default">Send</button>
+            </div>
+          </div>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(document).ready(function(){
+      $('#btnShowModal').click(function(){
+        $('#loginModal').modal('show');
+      });
+       $('#btnRegisterModal').click(function(){
+        $('#RegisterModal').modal('show');
+      });
+       $('#btnHideModal').click(function(){
+        $('#loginModal').modal('hide');
+      });
+       $('#btnHideModal1').click(function(){
+        $('#RegisterModal').modal('hide');
+      });
+    });
+  </script>
+</body>
+</html>
